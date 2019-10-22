@@ -1,0 +1,23 @@
+{{define "body"}}
+<p>
+    <a href="/create">Create your post</a>
+</p>
+
+<ul class="posts">
+{{ range .Posts }}
+    {{ if .Private }}
+    <li>
+        {{ .Title }}
+        <form method="GET" action="/view">
+            <input type="hidden" name="id" value="{{ .Id }}">
+            <input type="text" name="key" value="" placeholder="key">
+            <input type="submit" value="go">
+        </form>
+    </li>
+    {{ else}}
+        <li><a href="/view?id={{ .Id }}">{{ .Title }}</a></li>
+    {{ end}}
+    </li>
+{{ end}}
+</ul>
+{{end}}

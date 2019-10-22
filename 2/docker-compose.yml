@@ -1,0 +1,21 @@
+version: '3'
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_RANDOM_ROOT_PASSWORD: 1
+      MYSQL_DATABASE: yblog
+    volumes:
+      - ./challenge/sql:/docker-entrypoint-initdb.d
+  app:
+    build:
+      context: .
+    environment:
+      PORT: 9999
+      DBURL: "user:password@tcp(db:3306)/yblog"
+    command: "./app"
+    ports:
+      - ${PORT:-9999}:9999
+
