@@ -44,3 +44,10 @@ challenges:
     difficulty: 3
     host: *web_host
     port: 10001
+  "onetimepad":
+    tags: [crypto]
+    flag: ctf4y{many_tim3_pad_0ft3n_qu3sti0n3d_in_313m3ntary_13v31_ctf}
+    description: 'One time pad is perfectly secure!! <br>Hint: if you are in zer0pts, visit https://bitbucket.org/zer0pts/mtpsolver'
+    author: theoremoon
+    base_score: 1000
+    difficulty: 2
