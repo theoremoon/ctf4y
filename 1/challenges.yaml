@@ -59,7 +59,7 @@ challenges:
     description: '<a href="http://{{host}}:{{port}}">Just get the password for admin</a>'
     author: theoremoon
     base_score: 1000
-    difficulty: 0
+    difficulty: 1
     host: *web_host
     port: 11001
   "onetimepad":
