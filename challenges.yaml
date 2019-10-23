@@ -1,0 +1,14 @@
+servers:
+  ?: &pwn_host localhost
+  ?: &crypt_host localhost
+  ?: &web_host localhost
+challenges:
+  "rsa":
+    tags: [crypto]
+    flag: ctf4y{c0mm0n_m0dulu5_4tt4ck}
+    description: 'rsa challenge!!!!'
+    author: theoldmoon0602
+    base_score: 1000
+    host: *crypt_host
+    port: 8001
+    difficulty: 2
