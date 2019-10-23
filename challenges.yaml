@@ -7,8 +7,15 @@ challenges:
     tags: [crypto]
     flag: ctf4y{c0mm0n_m0dulu5_4tt4ck}
     description: 'rsa challenge!!!!'
-    author: theoldmoon0602
+    author: yoshiking
     base_score: 1000
     host: *crypt_host
     port: 8001
     difficulty: 2
+  "encode":
+    tags: [crypto]
+    flag: ctf4y{flag_2_base64_2_zip_base64_2_targz}
+    description: 'This is a Baby chall.'
+    author: yoshiking
+    base_score: 1000
+    difficulty: 1
