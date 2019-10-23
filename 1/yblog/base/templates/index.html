@@ -2,6 +2,12 @@
 <p>
     <a href="/create">Create your post</a>
 </p>
+<p>
+    <form action="/search" method="GET">
+        query: <input type="text" name="query">
+        <input type="submit" value="search">
+    </form>
+</p>
 
 <ul class="posts">
 {{ range .Posts }}

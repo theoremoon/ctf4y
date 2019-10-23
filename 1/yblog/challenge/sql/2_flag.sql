@@ -1,0 +1,1 @@
+INSERT INTO yblog.posts (title, content, private, private_key) VALUES ("FLAG IS HERE", "ctf4y{just_a_ba5ic_SQL_inj3cti0n_next_is_b1ind_0n3}", 1, "UdsM7KOwgX4uMiRzcOB4sctKeLhjzXxeWozV7L06G3fL3FSI0t2sUaZ2IbtSfmeZ");

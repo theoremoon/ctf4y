@@ -1,0 +1,19 @@
+{{define "body"}}
+<h2>CREATE YOUR ARTICLE</h2>
+<form method="POST" action="/create">
+    <p>
+        TITLE: <input type="text" name="title">
+    </p>
+    <p>
+        <textarea name="content"></textarea>
+    </p>
+    <p>
+        make private<input type="checkbox" class="toggler"><input type="text" name="key" value="" placeholder="key">
+    </p>
+    <p>
+        <input type="submit" value="publish">
+    </p>
+</form>
+
+
+{{end}}
