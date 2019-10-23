@@ -51,3 +51,10 @@ challenges:
     author: theoremoon
     base_score: 1000
     difficulty: 2
+  "weird hints":
+    tags: [crypto]
+    flag: ctf4y{This_chall_is_inspired_from_Security_Fest_2019}
+    description: 'huuum. something is weird...'
+    author: yoshiking
+    base_score: 1000
+    difficulty: 3
