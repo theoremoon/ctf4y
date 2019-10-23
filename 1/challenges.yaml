@@ -6,7 +6,7 @@ challenges:
   "rsa":
     tags: [crypto]
     flag: ctf4y{c0mm0n_m0dulu5_4tt4ck}
-    description: 'rsa challenge!!!!'
+    description: 'rsa challenge!!!! <pre>nc {{host}} {{port}}</pre>'
     author: yoshiking
     base_score: 1000
     host: *crypt_host
@@ -19,3 +19,28 @@ challenges:
     author: yoshiking
     base_score: 1000
     difficulty: 1
+  "rev1":
+    tags: [reversing]
+    flag: ctf4b{kosenctf_x_rev_then_xor}
+    description: 'Just a go reversing. A bit of hard.'
+    author: theoremoon
+    base_score: 1000
+    difficulty: 3
+  "yblog":
+    tags: [web]
+    flag: ctf4y{just_a_ba5ic_SQL_inj3cti0n_next_is_b1ind_0n3}
+    description: 'try your web ability <a href="http://{{host}}:{{port}}">here</a>'
+    author: theoremoon
+    base_score: 1000
+    difficulty: 1
+    host: *web_host
+    port: 10000
+  "yblog_revised":
+    tags: [web]
+    flag: ctf4y{anyway_y0u_can_g3t_f1ag_with_th3_b1ind}
+    description: 'yblog <a href="http://{{host}}:{{port}}">revised</a>, but still vulnerable.'
+    author: theoremoon
+    base_score: 1000
+    difficulty: 3
+    host: *web_host
+    port: 10001
