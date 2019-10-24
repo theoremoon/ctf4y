@@ -44,6 +44,24 @@ challenges:
     difficulty: 3
     host: *web_host
     port: 10001
+  "just_login":
+    tags: [web]
+    flag: ctf4y{JUST_DO_IT}
+    description: '<a href="http://{{host}}:{{port}}">DO IT</a>'
+    author: theoremoon
+    base_score: 1000
+    difficulty: 0
+    host: *web_host
+    port: 11000
+  "just_get_password":
+    tags: [web]
+    flag: ctf4y{KEEN_YOUR_SQL_SKILL}
+    description: '<a href="http://{{host}}:{{port}}">Just get the password for admin</a>'
+    author: theoremoon
+    base_score: 1000
+    difficulty: 1
+    host: *web_host
+    port: 11001
   "onetimepad":
     tags: [crypto]
     flag: ctf4y{many_tim3_pad_0ft3n_qu3sti0n3d_in_313m3ntary_13v31_ctf}
