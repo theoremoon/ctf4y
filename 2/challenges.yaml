@@ -1,0 +1,14 @@
+servers:
+  ?: &pwn_host localhost
+  ?: &crypt_host localhost
+  ?: &web_host localhost
+challenges:
+  "mixed cipher":
+    tags: [crypto]
+    flag: ctf4y{L#B_de#r#pti#n_ora#le_c9630b129769330c9498858830f306d9}
+    description: '<pre>nc {{host}} {{port}}</pre>'
+    author: yoshiking
+    base_score: 1000
+    host: *crypt_host
+    port: 8000
+    difficulty: 2

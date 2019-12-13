@@ -1,0 +1,7 @@
+version: '3'
+services:
+  mixed_cipher:
+    build: ./
+    restart: always
+    ports:
+      - ${PORT:-8000}:8888
